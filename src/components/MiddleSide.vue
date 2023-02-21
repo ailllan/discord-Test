@@ -5,19 +5,19 @@
         </div>
         <div class="frindlist">
             <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue :userball-img='imgUrl[0]' /></div>
+                <div class="friend-icon"><user-ball-vue  /></div>
                 <div>aillan</div>
             </div>
             <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue :userball-img='imgUrl[1]' /></div>
+                <div class="friend-icon"><user-ball-vue  /></div>
                 <div>好友1</div>
             </div>
             <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue :userball-img='imgUrl[2]' /></div>
+                <div class="friend-icon"><user-ball-vue  /></div>
                 <div>好友2</div>
             </div>
             <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue :userball-img='imgUrl[3]' /></div>
+                <div class="friend-icon"><user-ball-vue  /></div>
                 <div>好友3</div>
             </div>
         </div>
@@ -30,14 +30,7 @@ export default {
     name: 'MiddleSide',
     components: { UserBallVue },
     async setup() {
-        console.log(`中間欄已啟動`);
         let Imgdata = ref(0);
-        Imgdata = await fetch('frontenddata.json')
-            .then((res) => res.json())
-            .then(function (data) {
-                return data
-            })
-
         return { Imgdata }
     }
 }

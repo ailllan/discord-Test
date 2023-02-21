@@ -1,72 +1,27 @@
 [
     {
-        "usericon":"images/user_ballIcon1.png",
+        "usericon":"/images/user_ballIcon1.png",
         "username":"user1",
-        "userinfo":""
+        "userinfo":"",
+        "userurl":"1"
     },
     {
-        "usericon":"images/user_ballIcon1.png",
+        "usericon":"/images/user_ballIcon1.png",
         "username":"user2",
-        "userinfo":""
+        "userinfo":"",
+        "userurl":"2"
     },
     {
-        "usericon":"images/user_ballIcon1.png",
+        "usericon":"/images/user_ballIcon1.png",
         "username":"user3",
-        "userinfo":""
+        "userinfo":"",
+        "userurl":"3"
     },
     {
-        "usericon":"images/user_ballIcon1.png",
+        "usericon":"/images/user_ballIcon1.png",
         "username":"user4",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user5",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user6",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user7",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user8",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user9",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user10",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user11",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user12",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user13",
-        "userinfo":""
-    },
-    {
-        "usericon":"images/user_ballIcon1.png",
-        "username":"user14",
-        "userinfo":""
+        "userinfo":"",
+        "userurl":"4"
     }
+
 ]

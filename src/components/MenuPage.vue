@@ -5,7 +5,6 @@
       <div class="left-side">
         <left-side/>
       </div>
-
       <!-- 中間好友 -->
       <div class="middle-side">
         <middle-side></middle-side>
@@ -34,10 +33,8 @@
           <!-- 右側 -->
           <div class="chat-right"></div>
         </div>
-
       </div>
     </div>
-
   </v-app>
 
 </template>
@@ -73,18 +70,19 @@ export default {
 
 .middle-side {
   flex: 1.5;
-  background-color: rgb(81, 82, 83);
+  background-color: rgb(230, 226, 232)
 }
 
 .left-side {
   flex: 0.5;
-  background-color: rgb(43, 43, 51);
+  background-color: rgb(189, 183, 194)
 }
 
 .right-side {
   flex: 8;
   background-color: rgb(244, 241, 237);
   display: block;
+  border:solid 0.5px;
 }
 
 
@@ -117,11 +115,11 @@ export default {
 
 .chat-left {
   flex: 7;
-  background-color: blueviolet
+  background-color: rgb(251, 249, 253)
 }
 
 .chat-right {
   flex: 3;
-  background-color: chartreuse;
+  background-color: rgb(254, 255, 252);
 }
 </style>

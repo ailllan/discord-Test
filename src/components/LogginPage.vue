@@ -19,7 +19,6 @@
         <div> <v-text-field type="password" label="password" v-model="passWordVal"></v-text-field></div>
         <div>
           <v-btn color="secondary" block @click="LogginSubmit">
-            <!-- <router-link to="/menu">登入</router-link> -->
             登入
           </v-btn>
 

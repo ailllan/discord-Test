@@ -15,8 +15,8 @@ const routes = [
     component: MenuPage
   },
   {
-    path: '/chatroom',
-    name: 'chatroom',
+    path: '/chatroom/:id',
+    name: 'chatroom/:id',
     component: ChatRoom
   }
 ]
