@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import LogginPage from '../components/LogginPage.vue'
 import MenuPage from '../components/MenuPage.vue'
 import ChatRoom from'../components/ChatRoom.vue'
+import FriendStatus from '../components/FriendStatus.vue'
 const routes = [
   {
     path: '/',
@@ -18,6 +19,11 @@ const routes = [
     path: '/chatroom/:id',
     name: 'chatroom/:id',
     component: ChatRoom
+  },
+  {
+    path: '/friendstatus',
+    name: 'friendstatus',
+    component: FriendStatus
   }
 ]
 

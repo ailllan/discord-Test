@@ -1,58 +1,51 @@
 <template>
-    <div class="outland">
-        <div class="  ">
+    <div class="  ">
             <v-text-field label="搜尋或開始對話"></v-text-field>
         </div>
-        <div class="frindlist">
-            <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue  /></div>
-                <div>aillan</div>
-            </div>
-            <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue  /></div>
-                <div>好友1</div>
-            </div>
-            <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue  /></div>
-                <div>好友2</div>
-            </div>
-            <div class="frindlist-item">
-                <div class="friend-icon"><user-ball-vue  /></div>
-                <div>好友3</div>
-            </div>
-        </div>
+    <div class="frindlist" v-for="item in Imgdata" :key="item.username">
+      
+        <user-ball-vue :UserBallImg='item.usericon' :UserChatRoom="item.userurl" />
+        {{ item.username }}
+    
     </div>
 </template>
 <script>
 import UserBallVue from './UserBall.vue';
-import { ref } from 'vue'
+import { ref } from 'vue';
 export default {
     name: 'MiddleSide',
     components: { UserBallVue },
-    async setup() {
-        let Imgdata = ref(0);
-        return { Imgdata }
+    setup() {
+        console.log(`middleside`);
+        let Imgdata = ref([]);
+        const load = async () => {
+            try {
+                let data = await fetch('http://localhost:8080/frontenddata.json')
+                Imgdata.value = await data.json()
+                if (!data.ok) {
+                    throw Error(`資料獲取失敗`)
+                }
+            } catch (err) {
+                console.log(err)
+            }
+        }
+        load()
+        return { Imgdata, load }
     }
 }
 </script>
 <style scoped>
-.outland{
+.outland {
     width: 90%;
     height: 100%;
 }
+
 .frindlist {
-    display: block
+    width: 40%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
-.frindlist-item {
-    display: flex;
-    padding-top: 5%;
-}
-
-.friend-icon {
-    display: flex;
-    flex-direction: row;
-    width: 15%;
-    height: 30px;
-}
 </style>

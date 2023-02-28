@@ -3,30 +3,33 @@
     <div class="main">
       <!-- 左側縮圖欄 -->
       <div class="left-side">
-        <left-side/>
+        <left-side />
       </div>
       <!-- 中間好友 -->
       <div class="middle-side">
-        <middle-side></middle-side>
+        <middle-side/>
+        <!-- <left-side /> -->
       </div>
       <!-- 右邊主畫面 -->
       <div class="right-side">
         <!-- 上欄 -->
-        <v-top-navigation :value="value" color="teal" grow>
-          <v-icon>mdi-human-greeting</v-icon>
-          <v-btn>
-            <span>線上</span>
-          </v-btn>
-          <v-btn>
-            <span>所有</span>
-          </v-btn>
-          <v-btn>
-            <span>等待中</span>
-          </v-btn>
-          <v-btn>
-            <span>已封鎖</span>
-          </v-btn>
-        </v-top-navigation>
+        <div  class="top-side">
+          <v-top-navigation :value="value" color="teal" grow  class="top-side" >
+            <v-icon>mdi-human-greeting</v-icon>
+            <v-btn>
+              <span>線上</span>
+            </v-btn>
+            <v-btn>
+              <span>所有</span>
+            </v-btn>
+            <v-btn>
+              <span>等待中</span>
+            </v-btn>
+            <v-btn>
+              <span>已封鎖</span>
+            </v-btn>
+          </v-top-navigation>
+        </div>
         <div class="chat-contain">
           <!-- 左側 -->
           <div class="chat-left"></div>
@@ -82,9 +85,16 @@ export default {
   flex: 8;
   background-color: rgb(244, 241, 237);
   display: block;
-  border:solid 0.5px;
+  border: solid 0.5px;
 }
 
+.top-side {
+  height: 60px;
+  /* -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222; */
+  /* box-shadow: 0 4px 6px #222; */
+  border-bottom: 1px;
+}
 
 
 .frindlist {
