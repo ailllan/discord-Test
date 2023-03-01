@@ -10,7 +10,7 @@
             <div class="right-side">
                 <!-- 這裡是聊天室 -->
                 <v-top-navigation :value="value" color="teal" grow>
-                    <v-icon>mdi-human-greeting</v-icon>
+                    <!-- <v-icon>mdi-human-greeting</v-icon>
                     <v-btn>
                         <span>線上</span>
                     </v-btn>
@@ -22,7 +22,7 @@
                     </v-btn>
                     <v-btn>
                         <span>已封鎖</span>
-                    </v-btn>
+                    </v-btn> -->
                 </v-top-navigation>
                 <div class="chat-box">
                     <div class="chat-contain">
@@ -86,12 +86,12 @@ export default {
 
 .left-side {
     flex: 0.5;
-    background-color: rgb(43, 43, 51);
+    background-color: rgb(230, 226, 232)
 }
 
 .middle-side {
     flex: 1.5;
-    background-color: rgb(81, 82, 83);
+    background-color: rgb(189, 183, 194)
 }
 
 .right-side {

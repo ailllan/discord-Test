@@ -17,16 +17,16 @@
           <v-top-navigation :value="value" color="teal" grow  class="top-side" >
             <v-icon>mdi-human-greeting</v-icon>
             <v-btn>
-              <span>線上</span>
+              <span  @click= "ClickHandler">線上</span>
             </v-btn>
             <v-btn>
-              <span>所有</span>
+              <span  @click= "ClickHandler">所有</span>
             </v-btn>
             <v-btn>
-              <span>等待中</span>
+              <span  @click= "ClickHandler">等待中</span>
             </v-btn>
             <v-btn>
-              <span>已封鎖</span>
+              <span  @click= "ClickHandler">已封鎖</span>
             </v-btn>
           </v-top-navigation>
         </div>
@@ -45,22 +45,21 @@
 <script>
 import LeftSide from './LeftSide.vue';
 import MiddleSide from './MiddleSide.vue';
+import router from '@/router';
+// import { ref } from 'vue';
 export default {
   name: 'MenuPage',
-  data() {
-    return {
-      imgUrl: [],
-      userDataProps: [],
-    }
+  setup(){
+    // const imgUrl=ref('');
+    // const userDataProps=ref('')
+    const ClickHandler = () => {
+      console.log(`觸發`);
+            router.push({ path: `/friendstatus`})    
+        }
+        return{ClickHandler}
   },
   components: { LeftSide, MiddleSide },
-  methods: {
 
-
-  }
-  , created() {
-
-  }
 
 }
 </script>
